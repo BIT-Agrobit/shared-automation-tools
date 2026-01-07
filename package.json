@@ -1,0 +1,21 @@
+{
+  "name": "shared-automation-tools",
+  "version": "1.0.0",
+  "description": "Shared automation tools for SMART, AGRONEGOCIOS, and LOGISTICA projects",
+  "type": "module",
+  "main": "s3-json-handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "automation",
+    "s3",
+    "allure",
+    "github-actions"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.x"
+  }
+}
