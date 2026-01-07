@@ -19,7 +19,7 @@ En tu workflow de GitHub Actions, agrega un paso para clonar este repositorio:
 - name: Checkout shared tools
   uses: actions/checkout@v4
   with:
-    repository: tu-organizacion/shared-automation-tools  # Cambia esto por tu org/repo
+    repository: BIT-Agrobit/shared-automation-tools
     path: .shared-tools
     token: ${{ secrets.GITHUB_TOKEN }}  # O usa un PAT si es un repo privado
 ```
@@ -230,7 +230,7 @@ jobs:
       - name: Checkout shared tools
         uses: actions/checkout@v4
         with:
-          repository: tu-organizacion/shared-automation-tools
+          repository: BIT-Agrobit/shared-automation-tools
           path: .shared-tools
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -343,7 +343,7 @@ jobs:
    cd shared-automation-tools
    git add .
    git commit -m "Initial commit: Shared automation tools"
-   git remote add origin https://github.com/tu-organizacion/shared-automation-tools.git
+   git remote add origin git@github.com:BIT-Agrobit/shared-automation-tools.git
    git push -u origin main
    ```
 3. Asegúrate de que tus otros repositorios tengan acceso a este (si es privado, necesitarás un PAT)
