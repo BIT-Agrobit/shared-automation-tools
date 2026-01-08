@@ -307,7 +307,7 @@ async function main() {
     };
 
     // Define your S3 file path para el índice (cada proyecto tiene su propio archivo)
-    const s3Key = `data/${PROJECT_NAME.toLowerCase()}/test-results.json`;
+    const s3Key = `data/test-results.json`;
 
     // Read existing JSON or get null if doesn't exist
     let jsonData = await readJsonFromS3(s3Key);
