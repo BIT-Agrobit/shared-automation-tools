@@ -26,6 +26,7 @@ const AWS_CONFIG = {
 const BUCKET_NAME = process.env.BUCKET_NAME;
 const PROJECT_NAME = process.env.PROJECT_NAME || 'UNKNOWN';
 const ALLURE_RESULTS_PATH = process.env.ALLURE_RESULTS_PATH || './allure-results';
+const REPOSITORY_URL = process.env.REPOSITORY_URL;
 
 // GitHub Actions context variables
 const GITHUB_CONTEXT = {
@@ -317,6 +318,7 @@ async function main() {
       jsonData = {
         created: new Date().toISOString(),
         project: PROJECT_NAME,
+        repositoryUrl: REPOSITORY_URL,
         testRuns: [],
       };
       console.log('');
