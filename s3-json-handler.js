@@ -328,6 +328,7 @@ async function main() {
     // Add the summary entry to the array
     jsonData.testRuns = jsonData.testRuns || [];
     jsonData.testRuns.push(newEntrySummary);
+    jsonData.repositoryUrl = REPOSITORY_URL;
     jsonData.lastUpdated = new Date().toISOString();
     jsonData.totalRuns = jsonData.testRuns.length;
 
